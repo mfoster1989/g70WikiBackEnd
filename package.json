@@ -13,6 +13,16 @@
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "express": "^4.16.2",
+    "nodemon": "^1.17.1",
     "pg": "^7.4.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfoster1989/g70WikiBackEnd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mfoster1989/g70WikiBackEnd/issues"
+  },
+  "homepage": "https://github.com/mfoster1989/g70WikiBackEnd#readme"
 }
