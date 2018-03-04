@@ -8,6 +8,20 @@ const database = require("./database-connection")
 app.use(cors())
 app.use(bodyParser.json());
 
+app.get("/", (request, response) => {
+    queries
+        .list("article")
+        .then(indoorfields =>
+            queries.list("video").then(outdoorfields =>
+                response.json({
+                    article: article,
+                    video: video
+                })
+            )
+        )
+        .catch(console.error);
+});
+
 app.get("/article", (request, response) => {
     queries.list("article").then(article => {
         response.json({ article });
