@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 app.get("/", (request, response) => {
     queries
         .list("article")
-        .then(indoorfields =>
-            queries.list("video").then(outdoorfields =>
+        .then(video =>
+            queries.list("video").then(video =>
                 response.json({
                     article: article,
                     video: video
